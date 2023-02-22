@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03_Test_391.html   </title>
+</head>
+<style> *{font-size: 20pt ; } </style>
+<script>
+    const city = [ '서울','대구','제주','대전','진주',];
+    
+    for(var sj=0; sj<city.length; sj=sj+1){  //정석
+        document.write( city[sj], ' ');
+    }
+    document.write('<p>');
+
+    for(var i in city){  //배열순서  0  1  2  3  4   
+        document.write( city[i], ' ');
+    }
+    document.write('<p>');
+
+
+    for(var j of city){ //짧은문장으로 쉽게 만들 수 있음.
+        document.write(j,' ');
+    }
+    document.write('<p>');
+
+
+    city.forEach(function(value,index) { // city는 
+        document.write(index, '번째',value,'<br>') ;
+    }) ;
+    document.write('<p>');
+
+    var num= [1,2,3] ;
+    num.forEach(function(value,index) { //index는 0~부터 시작하는 값, value는 지정함수를 순차적으로 기입?
+        document.write(index,' ', value,'<br>');
+    }) ;
+    document.write('<p>');
+
+    //foreach()함수=메소드출력
+</script>
+<body>
+    <h2> 03_Test_391.html   </h2>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test.html</title>
+    
+    <script>
+    //자바스크립트 -----------------------------------
+    function Lotto(){
+    var Game = new Array();
+    for(var a=0; a<6; a++){
+        Game[a] = Math.floor(Math.random()*45+1);
+        for(var j=0; j<a ; j++){
+            if(Game[a]==Game[j]){ a--; continue; }
+        }
+    }
+    Game.sort(function(a,b){return a-b;} );
+        for(var k=0; k<6; k++){
+            document.write(Game[k],' ');
+        }
+        Luckysix =+ Game[k]
+    }
+    document.getElementById('Display').innerHTML=Luckysix;
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <div id="Display"></div>
+    <button onclick="Lotto()">행운의 6자리 추첨</button>
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+    *{
+        font-size: 25pt;
+    }
+</style>
+</html>

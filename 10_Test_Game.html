@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_Test_Game.html    </title>
+    
+    <script>
+    //자바스크립트 ----------------------------------- 
+    function book(){
+        var title = '개화산'; //범위 축소
+        return title ;
+    } //end
+
+    function discount(){
+        var dc=1500;
+    } //end
+
+    function note(){
+        var retA = book();
+        var retB = discount();
+
+        document.write('<h2>note함수', '<br>');
+        document.write('산이름',retA, '<br>');
+        document.write('산이름',book(), '<hr>');
+
+        document.write('할인율',retB, '</h2>'); 
+        document.write('할인율',discount());
+    } //end
+    </script>
+  
+</head>
+<!-- 주석 '시작' 입니다.    ------  -->
+<body>
+    <h2>10_Test_Game.html    </h2>
+    <button onclick="note()">note 함수호출</button>
+</body>
+<!-- 주석 '끝' 입니다.    ------  -->
+<style>
+    /*css주석 기입  */
+    *{
+        font-size: 21pt;
+    }
+</style>
+</html>

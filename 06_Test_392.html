@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 06_Test_392.html   </title>
+</head>
+<style> *{font-size: 20pt ; } </style>
+<script>
+    var base = [7, 8, 9];
+    for(var sj=0; sj<base.length; sj++){
+        document.write(base[sj],' ' );
+    }
+    document.write('<p>');
+
+    for(var sj=0; sj<base.length; sj++){
+    document.write(base[sj]*2,' ' );
+    }
+    document.write('<p>');
+
+    var data =base.map(function(value){return value*2;});
+    document.write(data.toString(),'<p>')
+    //foreach()함수=메소드출력
+</script>
+<body>
+    <h2> 06_Test_392.html   </h2>
+</body>
+</html>
